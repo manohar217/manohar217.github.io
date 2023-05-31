@@ -138,8 +138,20 @@
               <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Phone</div>
             </div>
             <div class="col-sm-7">
-              <div class="pb-2">+91 8790093484</div>
+              <div class="pb-2">
+                <span id="Phone">+91 8790093484</span>
+                 <button onclick="phone()" class="copy-icon">
+                 <i class="far fa-copy"></i>
+                 </button>
+               </div>
             </div>
+            <script>
+               function copyEmail() {
+                 const phone = document.getElementById("phone").innerText;
+                 navigator.clipboard.writeText(phone)
+      
+              }
+            </script>
             <div class="col-sm-5">
               <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Address</div>
             </div>
