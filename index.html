@@ -102,31 +102,61 @@
               <div class="pb-2 fw-bolder"><i class="far fa-calendar-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Age</div>
             </div>
             <div class="col-sm-7">
-              <div class="pb-2">28</div>
+              <div class="pb-2">26</div>
             </div>
+<div class="col-sm-5">
+  <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Email</div>
+</div>
+<div class="col-sm-7">
+  <div class="pb-2">
+    <span id="email-address">rajmanohar19@gmail.com</span>
+    <button onclick="copyEmail()" class="copy-icon">
+      <i class="far fa-copy"></i>
+    </button>
+  </div>
+</div>
+
+<script>
+  function copyEmail() {
+    const emailAddress = document.getElementById("email-address").innerText;
+    navigator.clipboard.writeText(emailAddress)
+      
+  }
+</script>
+
+
+
+
+
             <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Email</div>
+              <div class="pb-2 fw-bolder"><i class="fab fa-skype pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Linkedin</div>
             </div>
             <div class="col-sm-7">
-              <div class="pb-2">walter@company.com</div>
-            </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fab fa-skype pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Skype</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">username@skype.com</div>
+              <div class="pb-2"><a href="https://www.linkedin.com/in/raj-manohar-n-6b633a156/">Linkedin Profile</a></div>
             </div>
             <div class="col-sm-5">
               <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Phone</div>
             </div>
             <div class="col-sm-7">
-              <div class="pb-2">+0718-111-0011</div>
+              <div class="pb-2">
+                <span id="phone-number">+91 8790093484</span>
+                 <button onclick="copyPhone()" class="copy-icon">
+                 <i class="far fa-copy"></i>
+                 </button>
+               </div>
             </div>
+            <script>
+               function copyPhone() {
+                 const phone = document.getElementById("phone-number").innerText;
+                 navigator.clipboard.writeText(phone)
+      
+              }
+            </script>
             <div class="col-sm-5">
               <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Address</div>
             </div>
             <div class="col-sm-7">
-              <div class="pb-2">131 W, City Center, New York, U.S.A</div>
+              <div class="pb-2">3-168/1, Bobbillanka, pin-533293, Rajahmundry, Andhra Pradesh</div>
             </div>
           </div>
         </div>
@@ -381,58 +411,3 @@
     <script src="scripts/main.js?ver=1.2.1"></script>
   </body>
 </html>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Resume</title>
-    <style>
-        /* Add your CSS styles here */
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Resume</h1>
-    </header>
-
-    <section>
-        <h2>Personal Information</h2>
-        <p>Name: Raj Manohar Nichenakolla</p>
-        <p>Email: rajmanohar19.com</p>
-        <p>Phone: 8790093484</p>
-    </section>
-
-    <section>
-        <h2>Education</h2>
-        <p>Degree: BTech</p>
-        <p>University: Jntu-K</p>
-        <p>Year: 2018</p>
-    </section>
-
-    <section>
-        <h2>Experience</h2>
-        <p>Job Title: DevOps Engineer</p>
-        <p>Company: Zelarsoft Pvt ltd</p>
-        <p>Duration: 2021 - Present</p>
-        <ul>
-            <li>Infrastructure Provisioning</li>
-            <li>Build and Release Engineer</li>
-            <li>Autoamation Engineer</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Azure DevOps</li>
-            <li>Bash/Powershell Scripting</li>
-            <li>Docker</li>
-		<li>Ansible</li>
-		<li>sonar cloud</li>
-		<li>Jenkins</li>
-		<li>AWS</li>
-        </ul>
-    </section>
-</body>
-</html>
->>>>>>> 891ee670553e88906a3f598e81c9db8349f23d8d
