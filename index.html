@@ -139,15 +139,15 @@
             </div>
             <div class="col-sm-7">
               <div class="pb-2">
-                <span id="Phone">+91 8790093484</span>
-                 <button onclick="phone()" class="copy-icon">
+                <span id="phone-number">+91 8790093484</span>
+                 <button onclick="copyPhone()" class="copy-icon">
                  <i class="far fa-copy"></i>
                  </button>
                </div>
             </div>
             <script>
                function copyEmail() {
-                 const phone = document.getElementById("phone").innerText;
+                 const phone = document.getElementById("phone-number").innerText;
                  navigator.clipboard.writeText(phone)
       
               }
